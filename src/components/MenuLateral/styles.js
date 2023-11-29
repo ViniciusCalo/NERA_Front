@@ -45,6 +45,13 @@ margin-left: 50%;
     margin-top: 80px;
     margin-bottom: 80px;
     `;
+    
+    export const ItemAtivo = styled.div`
+    width: 95%;
+    border-radius: 20px;
+    background: rgba(3, 76, 140, 0.24);
+    `;
+
 export const Link = styled.a`
     display: flex;
     align-items: center;

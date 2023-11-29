@@ -11,12 +11,17 @@ import sair from './img/Vector_Logout.svg'
 import seta from './img/seta.svg'
 
 
+
+
+
+
 const MenuLateral = () => {
+
   return (
-    <C.Menu>
+    <C.Menu >
       <C.Lista>
         <C.Item><C.Link href="#"><C.Icone src={logo} /></C.Link></C.Item>
-        <C.Item><C.Link href="#"><C.Icone src={user} /><C.Texto>Perfil</C.Texto></C.Link></C.Item>
+        <C.ItemAtivo><C.Item ><C.Link href="#"><C.Icone src={user} /><C.Texto>Perfil</C.Texto></C.Link></C.Item></C.ItemAtivo>
         <C.Item><C.Link href="#"><C.Icone src={trilha} /><C.Texto>Trilhas</C.Texto></C.Link></C.Item>
         <C.Item><C.Link href="#"><C.Icone src={his} /><C.Texto>Historico</C.Texto></C.Link></C.Item>
         <C.Item2><C.Link href="#"><C.Icone2 src={seta} /></C.Link></C.Item2>
