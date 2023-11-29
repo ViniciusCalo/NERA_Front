@@ -8,10 +8,14 @@ const Global = createGlobalStyle`
     }
     body {
         font-family: 'Roboto', Sans-Serif;
+<<<<<<< HEAD
        /* background:  #4ED9D9;
         display: flex;
         justify-content: center;
         align-items: center;*/
+=======
+        background:  #4ED9D9;
+>>>>>>> dev-thais
     } 
     `
     
