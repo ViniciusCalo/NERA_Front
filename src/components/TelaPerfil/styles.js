@@ -65,7 +65,7 @@ export const Title = styled.h1`
     font-weight: 500;
     line-height: normal;
     margin-left: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     `;
 export const Carrousel = styled.div`
     display: grid;
@@ -80,6 +80,12 @@ export const Carrousel = styled.div`
         display: none; 
     }
     `;
+export const DivConquista = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    `;
 
 export const Card = styled.article`
     scroll-snap-align: start;
@@ -89,13 +95,30 @@ export const Card = styled.article`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F29F05;
+    `;
+export const Card1 = styled.article`
+scroll-snap-align: start;
+border-radius: 100%;
+width: 100px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #F20574;
+`;
 
-    &:nth-child(odd) {
-        background: #F20574;
-    }
-    &:nth-child(even) {
-        background: #F2B705;
-    }
+
+export const textConquistado = styled.p`
+    color: #888585;
+    margin-top: 5%;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    width: 50%;
     `;
 
 export const ContainerE = styled.div`

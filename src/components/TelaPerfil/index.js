@@ -22,23 +22,50 @@ const TelaPerfil = () => {
                 <C.ContainerC>
                     <C.Title>Conquistas</C.Title>
                     <C.Carrousel>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
-                        <C.Card></C.Card>
+                        <C.DivConquista>
+                            <C.Card1 />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card1 />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card1 />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card1 />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card1 />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
+                        <C.DivConquista>
+                            <C.Card1 />
+                            <C.textConquistado>Explorador de frações</C.textConquistado>
+                        </C.DivConquista>
                     </C.Carrousel>
                 </C.ContainerC>
                 <C.ContainerE>
