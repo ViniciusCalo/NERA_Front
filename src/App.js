@@ -4,14 +4,15 @@ import GlobalStyle from './styles/global'
 import MenuLateral from './components/MenuLateral'
 //import TelaPerfil from './components/TelaPerfil'
 //import TelaTrilha from './components/TelaTrilha'
-import TelaModulo from './components/TelaModulo'
+//import TelaModulo from './components/TelaModulo'
+import TelaQuestao from './components/TelaQuestao'
 
 
 function App() {
   return (
     <>
       <MenuLateral />
-      <TelaModulo />
+      <TelaQuestao />
       <GlobalStyle />
     </>
   );
