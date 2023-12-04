@@ -1,11 +1,11 @@
 import React from 'react'
 import GlobalStyle from '../styles/login'
-import TelaLogin from '../components/TelaLogin'
+import TelaLoginAluno from '../components/TelaLoginAluno'
 
 const LoginAluno = () => {
   return (
     <>
-    <TelaLogin/>
+    <TelaLoginAluno/>
     <GlobalStyle/>
     </>
   )

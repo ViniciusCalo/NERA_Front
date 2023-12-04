@@ -4,7 +4,8 @@ import Perfil from './pages/Perfil'
 import Trilha from './pages/Trilha'
 import Modulo from './pages/Modulo'
 import Questao from './pages/Questao'
-import Login from './pages/LoginAluno';
+import LoginAluno from './pages/LoginAluno';
+import LoginProf from './pages/LoginProf';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -20,7 +21,8 @@ function App() {
           <Route path="trilha" element={<Trilha />} />
           <Route path="modulo" element={<Modulo />} />
           <Route path="questao" element={<Questao />} />
-          <Route path="login" element={<Login/>}/>
+          <Route path="loginAluno" element={<LoginAluno/>}/>
+          <Route path="loginProfessor" element={<LoginProf/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

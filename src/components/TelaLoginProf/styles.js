@@ -38,7 +38,7 @@ height: 450px;
 z-index: 0;
 border-radius: 15px;
 padding-top: 3%;
-background-color: #F2B705;
+background-color: #F29F05;
 `
 export const vetor = styled.img`
 margin: 5%;
@@ -128,7 +128,7 @@ export const DivButton = styled.div`
     z-index: 1;
     display: flex;
     flex-direction: row;
-    background-color: #F2B705;
+    background-color: #F29F05;
     width: 60%;
     border-radius: 30px;
     `;
