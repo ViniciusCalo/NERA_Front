@@ -43,7 +43,7 @@ const TelaQuestao = () => {
             </C.Questao>
             <C.ContainerMenu>
                 <C.BtnReload><C.iconButton src={reload} alt='Refazer'></C.iconButton>Refazer</C.BtnReload>
-                <C.BtnTip><C.IconTip src={tip} alt='Dica' />Dica</C.BtnTip>
+                <C.BtnTip><C.IconTip src={tip} alt='Dica'></C.IconTip>Dica</C.BtnTip>
                 <C.BtnNext><C.iconButton src={next} alt='Próximo'></C.iconButton>Próximo</C.BtnNext>
             </C.ContainerMenu>
         </>

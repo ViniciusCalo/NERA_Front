@@ -33,13 +33,13 @@ export const Lista = styled.ul`
 export const Item = styled.li`
     list-style: none;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
     &:hover {
-        width: 95%;
+        width: 80%;
     border-radius: 20px;
     background: rgba(3, 76, 140, 0.24);
     }

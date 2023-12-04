@@ -132,6 +132,7 @@ export const TextoAlternativa = styled.h1`
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
+    margin: 0;
 `;
 export const TextoLinha = styled(TextoAlternativa)`
     position: absolute;
