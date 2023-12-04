@@ -4,7 +4,6 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
 `;
 export const IconHeader = styled.img`
     width: 5%;
@@ -25,7 +24,6 @@ export const Container = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 5%;
     left: 5%;
 `;
 

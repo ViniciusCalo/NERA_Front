@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Menu = styled.div`
+export const Menu = styled.nav`
     position: fixed;
     height: 100vh;
     background: #ffffff;
     border-radius: 0 20px 20px 0;
-    width: 7%;
+    width: 2%;
     padding: 2%;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
     overflow-x: hidden;
@@ -17,7 +17,7 @@ export const Menu = styled.div`
     align-items: center;
 
     &:hover {
-        width: 20%;
+        width: 15%;
     }
     `;
 
@@ -33,24 +33,25 @@ export const Lista = styled.ul`
 export const Item = styled.li`
     list-style: none;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-left: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+
+    &:hover {
+        width: 80%;
+    border-radius: 20px;
+    background: rgba(3, 76, 140, 0.24);
+    }
     `;
 export const Item2 = styled.li`
 margin-left: 50%;
     list-style: none;
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     `;
     
-    export const ItemAtivo = styled.div`
-    width: 95%;
-    border-radius: 20px;
-    background: rgba(3, 76, 140, 0.24);
-    `;
 
 export const Link = styled.a`
     display: flex;

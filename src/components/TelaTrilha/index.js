@@ -15,10 +15,11 @@ const TelaTrila = () => {
         <C.TitleHeader>Trilha</C.TitleHeader>
     </C.Header>
     <C.Container>
-        <C.DivTrilha1>
+        <a href='/modulo'><C.DivTrilha1>
             <C.ImgTrilha src={fracao}/>
             <C.TitleTrilha>Trilha de Frações</C.TitleTrilha>
         </C.DivTrilha1>
+        </a>
         <C.DivTrilha2>
             <C.ImgTrilha src={porct}/>
             <C.TitleTrilha>Trilha de porcentagem</C.TitleTrilha>

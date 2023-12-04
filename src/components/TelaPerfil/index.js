@@ -1,7 +1,6 @@
 import React from 'react'
 import * as C from './styles'
 import { AiTwotoneEdit } from "react-icons/ai";
-
 //mport MenuLateral from '../MenuLateral'
 import imgPerfil from './img/user.svg'
 import icon1 from './img/icon1.svg'
