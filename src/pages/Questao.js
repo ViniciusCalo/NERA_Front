@@ -6,7 +6,7 @@ const Questao = () => {
   return (
     <>
     <MenuLateral/>
-    <TelaQuestao/>
+    <TelaQuestao  />
     </>
   )
 }

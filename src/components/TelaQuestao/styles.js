@@ -94,7 +94,7 @@ export const Alternativas = styled.div`
     margin-bottom: 10px;
 `;
 
-export const Alternativa = styled.div`
+export const Alternativa = styled.button`
     position: relative;
     margin: 40px;
     display: flex;
@@ -107,6 +107,7 @@ export const Alternativa = styled.div`
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 10px;
+    border: none;
 `;
 
 export const AlternativaCorreta = styled.div`
