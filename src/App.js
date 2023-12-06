@@ -14,7 +14,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route>
           <Route path="perfil" element={<Perfil />} />    

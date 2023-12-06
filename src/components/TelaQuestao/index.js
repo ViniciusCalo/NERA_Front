@@ -2,13 +2,25 @@ import React from 'react'
 import * as C from './styles'
 import pizza from './img/pizza.png'
 import reload from './img/reload.png'
+import seta from './img/set.svg'
 import tip from './img/tip.png'
 import next from './img/next.png'
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import Modal from 'react-modal';
 
 const TelaQuestao = () => {
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    // Função que abre a modal
+ function abrirModal() {
+   setIsOpen(true);
+ }
+
+ // Função que fecha a modal
+ function fecharModal() {
+   setIsOpen(false);
+ }
 
     const [questoes, setQuestoes] = useState([])
     useEffect(() => {
@@ -79,11 +91,11 @@ const TelaQuestao = () => {
         var body = {
             "id": 1,
             "alternativa": alternativa
-          }
+        }
         try {
             const response = await axios.post("http://localhost:3001/questao/verificar", body)
             setResposta(response.data.message);
-            handleAlternativa(response.data.message, cor)   
+            handleAlternativa(response.data.message, cor)
         } catch (err) {
             console.log(err);
         }
@@ -131,9 +143,36 @@ const TelaQuestao = () => {
             </C.Questao>
             <C.ContainerMenu>
                 <C.BtnReload onClick={() => handleReaload()} ><C.iconButton src={reload} alt='Refazer'></C.iconButton>Refazer</C.BtnReload>
-                <C.BtnTip><C.IconTip src={tip} alt='Dica'></C.IconTip>Dica</C.BtnTip>
+                <C.BtnTip onClick={abrirModal}><C.IconTip src={tip} alt='Dica'></C.IconTip>Dica</C.BtnTip>
                 <C.BtnNext disabled={btnnext} ><C.iconButton src={next} alt='Próximo'></C.iconButton>Próximo</C.BtnNext>
             </C.ContainerMenu>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={fecharModal}
+                contentLabel="Modal de exemplo"
+                style={{
+                    overlay: {
+                      backgroundColor: 'rgba(217, 217, 217, 0.80)',
+                      zIndex: '1000'
+
+                    },
+                    content: {
+                        left: '26%',
+                      background: '#FFFFFF',
+                      borderRadius: '30px',
+                      width: '45%',
+                      padding: '20px'
+                    }
+                  }}
+            >   
+                <C.BtnVoltar onClick={fecharModal}><C.iconButton src={seta}></C.iconButton></C.BtnVoltar>
+                <C.CotainerModal>
+                    <C.ImgModal src={tip}/>
+                    <C.TituloModal>Dica:</C.TituloModal>
+                    <C.TextoModal>Conte as fatias faltantes! Identifique quantas fatias estão faltando na pizza. Esse número será o numerador da fração correspondente.</C.TextoModal>
+
+                </C.CotainerModal>
+            </Modal>
         </>
     )
 }
