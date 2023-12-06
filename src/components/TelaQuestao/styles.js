@@ -94,7 +94,7 @@ export const Alternativas = styled.div`
     margin-bottom: 10px;
 `;
 
-export const Alternativa = styled.div`
+export const Alternativa = styled.button`
     position: relative;
     margin: 40px;
     display: flex;
@@ -107,6 +107,7 @@ export const Alternativa = styled.div`
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 10px;
+    border: none;
 `;
 
 export const AlternativaCorreta = styled.div`
@@ -185,6 +186,48 @@ export const BtnNext = styled(Botao)`
 
 export const BtnTip = styled(Botao)`
 `;
+
+export const BtnVoltar = styled.button`
+    background: transparent;
+    border: none;
+    width: 30%;
+`;
+export const CotainerModal = styled.div`
+margin-top: -10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+`;
+
+export const ImgModal = styled.img`
+    width: 20%;
+    height: 20%;
+`;
+
+export const TituloModal = styled.h1`
+color: #000;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 42px; /* 105% */
+`;
+
+export const TextoModal = styled.p`
+color: #000;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+text-align: center;
+font-weight: 400;
+line-height: 42px;
+`;
+
+
 
 
 
