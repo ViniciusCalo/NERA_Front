@@ -133,18 +133,36 @@ export const DivButton = styled.div`
     border-radius: 30px;
     `;
 
-export const ButtonProf = styled.button`
-    color: #FFFFFF;
-    border: none;
-    width: 50%;
-    height: 120px;
-    bottom: 538px;
-    cursor: pointer;
-    background-color: #F29F05;
-    border-radius: 30px;
+export const ButtonProf = styled.a`
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 50%;
+  height: 120px;
+  bottom: 538px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #F29F05;
+  border-radius: 30px;
     `
-  export const ButtonAlu = styled.button`
-  color: #FFFFFF;
+export const ButtonAlu = styled.a`
+  text-decoration: none;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 50%;
   height: 120px;

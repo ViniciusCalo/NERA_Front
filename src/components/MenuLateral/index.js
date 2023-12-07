@@ -14,6 +14,9 @@ import seta from './img/seta.svg'
 
 
 const MenuLateral = () => {
+  function limparLocal(){
+    localStorage.clear();
+  }
 
   return (
     <C.Menu >
@@ -26,7 +29,7 @@ const MenuLateral = () => {
         <C.Item><C.Link href="#"><C.Icone src={noti} /><C.Texto>Notificacao</C.Texto></C.Link></C.Item>
         <C.Item><C.Link href="#"><C.Icone src={ajuda} /><C.Texto>Ajuda</C.Texto></C.Link></C.Item>
         <C.Item><C.Link href="#"><C.Icone src={conf} /><C.Texto>Configuração</C.Texto></C.Link></C.Item>
-        <C.Item><C.Link href="/login"><C.Icone src={sair} /><C.Texto>Sair</C.Texto></C.Link></C.Item>
+        <C.Item><C.Link href="/loginAluno" onClick={limparLocal}><C.Icone src={sair} /><C.Texto>Sair</C.Texto></C.Link></C.Item>
       </C.Lista>
     </C.Menu>
   );

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Menu = styled.nav`
     position: fixed;
-    height: 100vh;
+    height: 100%;
     background: #ffffff;
     border-radius: 0 20px 20px 0;
     width: 2%;
@@ -27,7 +27,7 @@ export const Lista = styled.ul`
     left: 0;
     width: 100%;
     padding-left: 5px;
-    padding-top: 10px;
+    padding-top: 5px;
 `;
 
 export const Item = styled.li`

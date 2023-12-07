@@ -26,7 +26,7 @@ const TelaQuestao = () => {
     useEffect(() => {
         const getQuestao = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/questao/alternativa/1")
+                const response = await axios.get("http://localhost:443/questao/alternativa/1")
                 setQuestoes(response.data)
             } catch (err) {
                 console.log(err);
@@ -93,7 +93,7 @@ const TelaQuestao = () => {
             "alternativa": alternativa
         }
         try {
-            const response = await axios.post("http://localhost:3001/questao/verificar", body)
+            const response = await axios.post("http://localhost:443/questao/verificar", body)
             setResposta(response.data.message);
             handleAlternativa(response.data.message, cor)
         } catch (err) {

@@ -21,36 +21,88 @@ align-items: center;
 width: 100%;
 `
 
+export const Div = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width: 100%;
+`
+export const textEntrar = styled.p`
+color: #888585;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+`
+
+export const ButtonEntrar = styled.a`
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+width: 30%;
+height: 40px;
+margin-top: 5%;
+margin-bottom: 5%;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border: none;
+background-color: #034C8C;
+border-radius: 15px;
+color: white;
+`
+
 export const Logo = styled.img`
 margin: 5%;
 flex-shrink: 0;
-width: 40%;
+width: 100%;
 `
 
+
 export const FormLogin = styled.form`
+position: relative;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-top: -12%;
 width: 60%;
 height: 450px;
-z-index: 0;
 border-radius: 15px;
 background-color: #F2B705;
+`
+export const Tituloform = styled.h1`
+color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: absolute;
+top: 10%;
+
 `
 export const vetor = styled.img`
 margin: 5%;
 flex-shrink: 0;
 `
+
+export const DivButton = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    `;
+
 export const InputS = styled.input`
-width: 80%;
 height: 30px;
 padding: 2%;
 margin: 2%;
 border-radius: 15px;
 border: none;
 font-size: 10px;
+
 `
 export const InputE = styled.input`
 width: 80%;
@@ -66,32 +118,20 @@ font-size: 10px;
 export const Button = styled.button`
 width: 80%;
 height: 30px;
-margin: 2%;
+margin-top: 5%;
+margin-bottom: 5%;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 border: none;
 background-color: #034C8C;
 border-radius: 15px;
 color: white;
-`
-export const ButtonC = styled.a`
-text-decoration: none;
-width: 80%;
-height: 30px;
-margin: 2%;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border: none;
-background-color: #034C8C;
-border-radius: 15px;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
 `
 
 export const ButtonG = styled.button`
 width: 80%;
 height: 30px;
-margin: 2%;
+margin-top: 5%;
+margin-bottom: 5%;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 border: none;
 background-color: white;
@@ -112,8 +152,15 @@ align-items: center;
 width: 70%;
 `
 export const Text = styled.p`
-margin: 2%;
-font-size: 1.5em;
+position: absolute;
+bottom: 10%;
+color: #000000B2;
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 `
 export const Link = styled.a`
 color: #000;
@@ -153,52 +200,6 @@ align-items: center;
 width: 60%;
 `;
 
-export const DivButton = styled.div`
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    background-color: #F2B705;
-    width: 60%;
-    border-radius: 30px;
-    `;
 
-export const ButtonProf = styled.a`
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  width: 50%;
-  height: 120px;
-  bottom: 538px;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #F29F05;
-  border-radius: 30px;
-    `
-export const ButtonAlu = styled.a`
-  text-decoration: none;
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  width: 50%;
-  height: 120px;
-  bottom: 538px;
-  cursor: pointer;
-  background-color: #F2B705;
-  border-radius: 30px;
-  `
+
 
