@@ -32,12 +32,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-top: -10%;
+margin-top: -12%;
 width: 60%;
 height: 450px;
 z-index: 0;
 border-radius: 15px;
-padding-top: 3%;
 background-color: #F2B705;
 `
 export const vetor = styled.img`
@@ -74,6 +73,20 @@ background-color: #034C8C;
 border-radius: 15px;
 color: white;
 `
+export const ButtonC = styled.a`
+text-decoration: none;
+width: 80%;
+height: 30px;
+margin: 2%;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border: none;
+background-color: #034C8C;
+border-radius: 15px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+`
 
 export const ButtonG = styled.button`
 width: 80%;
@@ -84,6 +97,12 @@ border: none;
 background-color: white;
 border-radius: 15px;
 color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+export const icon = styled.img`
+margin-right: 10%;
 `
 export const div = styled.div`
 display: flex;

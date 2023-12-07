@@ -1,6 +1,7 @@
 import React from 'react'
 import * as C from './styles'
 import Logo from './img/logo.png'
+import google from './img/google.svg'
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
@@ -60,8 +61,8 @@ try {
             ou
             <C.linha2></C.linha2>
         </C.DivLinha>
-        <C.ButtonG> Login com Google</C.ButtonG>
-        <C.Button>Criar Conta</C.Button>
+        <C.ButtonG><C.icon src={google} />Login com Google</C.ButtonG>
+        <C.ButtonC href='/cadastro' >Criar Conta</C.ButtonC>
         </C.FormLogin>
         </C.Container>
     </C.Box>
