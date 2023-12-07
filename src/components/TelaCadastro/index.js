@@ -62,6 +62,8 @@ const TelaCadastro = () => {
     }else{
       setToogle(false)
       setToogle2(false)
+      setSenha('')
+      setSenhaConfirma('')
     }
 
   }
@@ -78,8 +80,8 @@ const TelaCadastro = () => {
           <C.Tituloform>Crie o seu perfil</C.Tituloform>
           <C.InputE onChange={handleEmail} id='email' type="text" placeholder="E-mail ou nome do usuário" />
           <C.DivButton>
-            <C.InputS style={{ background: cor1 }} onChange={handleSenha} id='senha' type="password" placeholder="Senha" />
-            <C.InputS style={{ background: cor2 }} onChange={handleSenhaConfirma} id='senha2' type="password" placeholder="Confirmar Senha" />
+            <C.InputS style={{ border: `2px solid ${cor1}` }}  value={senha} onChange={handleSenha} id='senha' type="password" placeholder="Senha" />
+            <C.InputS style={{ border: `2px solid ${cor2}` }} value={senhaConfirma} onChange={handleSenhaConfirma} id='senha2' type="password" placeholder="Confirmar Senha" />
           </C.DivButton>
           <C.Button type='button' onClick={handleCadastrarUsuario}>Criar Conta</C.Button>
           <C.DivLinha>

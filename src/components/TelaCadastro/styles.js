@@ -102,6 +102,7 @@ margin: 2%;
 border-radius: 15px;
 border: none;
 font-size: 10px;
+
 `
 export const InputE = styled.input`
 width: 80%;
