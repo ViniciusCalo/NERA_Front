@@ -30,7 +30,7 @@ const handleVerificarUsuario = async () => {
     "senha": senha
 }
 try {
-    const response = await axios.post("http://localhost:3001/usuario/login", body)
+    const response = await axios.post("http://localhost:443/usuario/login", body)
     setSesao(response.data.message);
     console.log(sessao)
     localStorage.setItem('usuario', email);
