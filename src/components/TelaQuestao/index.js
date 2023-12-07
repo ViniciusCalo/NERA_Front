@@ -26,7 +26,7 @@ const TelaQuestao = () => {
     useEffect(() => {
         const getQuestao = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/questao/alternativa/1")
+                const response = await axios.get("http://localhost:443/questao/alternativa/1")
                 setQuestoes(response.data)
             } catch (err) {
                 console.log(err);
