@@ -44,7 +44,7 @@ export const vetor = styled.img`
 margin: 5%;
 flex-shrink: 0;
 `
-export const Input = styled.input`
+export const InputS = styled.input`
 width: 80%;
 height: 30px;
 padding: 2%;
@@ -53,6 +53,17 @@ border-radius: 15px;
 border: none;
 font-size: 10px;
 `
+export const InputE = styled.input`
+width: 80%;
+height: 30px;
+padding: 2%;
+margin: 2%;
+border-radius: 15px;
+border: none;
+font-size: 10px;
+`
+
+
 export const Button = styled.button`
 width: 80%;
 height: 30px;
@@ -147,11 +158,13 @@ export const ButtonProf = styled.a`
   width: 50%;
   height: 120px;
   bottom: 538px;
+  text-decoration: none;
   cursor: pointer;
   background-color: #F29F05;
   border-radius: 30px;
     `
 export const ButtonAlu = styled.a`
+  text-decoration: none;
   color: #FFF;
   font-family: Roboto;
   font-size: 27px;

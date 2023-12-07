@@ -7,14 +7,17 @@ import icon1 from './img/icon1.svg'
 import icon2 from './img/icon2.svg'
 
 const TelaPerfil = () => {
+    
+ 
+
     return (
         <>
             <C.Container>
                 <C.Infos>
                     <C.imgPerfil src={imgPerfil} alt="Imagem de perfil" />
                     <div>
-                        <C.User>@Usuario</C.User>
-                        <C.Name>Nome</C.Name>
+                        <C.User>@{localStorage.getItem("usuario")}</C.User>
+                        <C.Name>{localStorage.getItem("usuario")}</C.Name>
                     </div>
                     <C.ButtonEditar><AiTwotoneEdit /> Editar Perfil</C.ButtonEditar>
                 </C.Infos>

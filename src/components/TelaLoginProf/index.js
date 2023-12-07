@@ -10,12 +10,8 @@ const TelaLoginProf = () => {
         <C.Logo src={Logo}/>
         <C.Container>
         <C.DivButton>
-        <C.ButtonAlu>
-            <h1 class="h1Aluno">Aluno</h1>
-          </C.ButtonAlu>
-          <C.ButtonProf>
-            <h1 class="h1Prof">Professor</h1>
-          </C.ButtonProf>
+        <C.ButtonAlu href='loginAluno'>Estudante</C.ButtonAlu>
+          <C.ButtonProf>Professor</C.ButtonProf>
         </C.DivButton>
         <C.FormLogin>
         <C.Input type="text" placeholder="E-mail ou nome do usuário"/>

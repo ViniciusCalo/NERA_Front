@@ -30,6 +30,8 @@ export const User = styled.p`
     line-height: normal;
     `;
 export const Name = styled.p`
+    position: absolute;
+    top: 60%;
     color: #000;
     font-family: Roboto;
     font-size: 16px;
@@ -207,6 +209,8 @@ export const Text = styled.p`
     line-height: normal;
     `;
 export const Text2 = styled.p`
+    position: absolute;
+    bottom: 40px;
     color: #888585;
     font-family: Roboto;
     font-size: 20px;
