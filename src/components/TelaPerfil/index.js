@@ -16,8 +16,8 @@ const TelaPerfil = () => {
                 <C.Infos>
                     <C.imgPerfil src={imgPerfil} alt="Imagem de perfil" />
                     <div>
-                        <C.User>@{localStorage.getItem("usuario")}</C.User>
-                        <C.Name>{localStorage.getItem("usuario")}</C.Name>
+                        <C.User>@Thais{localStorage.getItem("usuario")}</C.User>
+                        <C.Name>Thais Carvalho{localStorage.getItem("usuario")}</C.Name>
                     </div>
                     <C.ButtonEditar><AiTwotoneEdit /> Editar Perfil</C.ButtonEditar>
                 </C.Infos>

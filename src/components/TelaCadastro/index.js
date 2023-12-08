@@ -53,7 +53,7 @@ const TelaCadastro = () => {
         "senha": senha
       }
       try {
-        const response = await axios.post("http://localhost:443/usuario/cadastrar", body)
+        const response = await axios.post("http://localhost:3001/usuario/cadastrar", body)
         console.log(response.data.message)
         nav('/loginAluno')
       } catch (err) {
