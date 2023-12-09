@@ -160,7 +160,7 @@ export const DivButton = styled.div`
     flex-direction: row;
     background-color: #F2B705;
     width: 60%;
-    border-radius: 30px;
+    border-radius: 30px 30px 0px 30px;
     `;
 
 export const ButtonProf = styled.a`
@@ -180,7 +180,7 @@ export const ButtonProf = styled.a`
   text-decoration: none;
   cursor: pointer;
   background-color: #F29F05;
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 30px;
     `
 export const ButtonAlu = styled.a`
   text-decoration: none;

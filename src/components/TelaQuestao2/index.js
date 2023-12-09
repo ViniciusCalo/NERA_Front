@@ -9,12 +9,10 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import Modal from 'react-modal';
-import { useNavigate } from 'react-router-dom';
 
 const uri = process.env.BASE_API_URL || "http://localhost:3001"; 
 
 const TelaQuestao = () => {
-    const nav = useNavigate()
     const [modalIsOpen, setIsOpen] = React.useState(false);
     // Função que abre a modal
  function abrirModal() {
@@ -30,7 +28,7 @@ const TelaQuestao = () => {
     useEffect(() => {
         const getQuestao = async () => {
             try {
-                const response = await axios.get(`${uri}/questao/alternativa/1`)
+                const response = await axios.get(`${uri}/questao/alternativa/2`)
                 setQuestoes(response.data)
             } catch (err) {
                 console.log(err);
@@ -118,9 +116,6 @@ const TelaQuestao = () => {
         setBtnNext(true)
     }
 
-    function nextQuestao() {
-        nav('/questao2')
-    }
 
     return (
         <>
@@ -135,10 +130,10 @@ const TelaQuestao = () => {
                     <img src={pizza} alt="questao1" border="0" />
                 </C.DivImagem>
                 <C.Alternativas>
-                    <C.Alternativa style={{ background: cor1 }} onClick={() => handleVerificar('cor1', questoes.alternativa1)} >
+                    <C.Alternativa style={{ background: cor2 }} onClick={() => handleVerificar('cor2', questoes.alternativa1)} >
                         <C.TextoAlternativa >{questoes.alternativa1}</C.TextoAlternativa>
                     </C.Alternativa>
-                    <C.Alternativa style={{ background: cor2 }} onClick={() => handleVerificar('cor2', questoes.alternativa2)}>
+                    <C.Alternativa style={{ background: cor1 }} onClick={() => handleVerificar('cor1', questoes.alternativa2)}>
                         <C.TextoAlternativa>{questoes.alternativa2}</C.TextoAlternativa>
                     </C.Alternativa>
                     <C.Alternativa style={{ background: cor3 }} onClick={() => handleVerificar('cor3', questoes.alternativa3)}>
@@ -152,7 +147,7 @@ const TelaQuestao = () => {
             <C.ContainerMenu>
                 <C.BtnReload onClick={() => handleReaload()} ><C.iconButton src={reload} alt='Refazer'></C.iconButton>Refazer</C.BtnReload>
                 <C.BtnTip onClick={abrirModal}><C.IconTip src={tip} alt='Dica'></C.IconTip>Dica</C.BtnTip>
-                <C.BtnNext onClick={nextQuestao} disabled={btnnext} ><C.iconButton src={next} alt='Próximo'></C.iconButton>Próximo</C.BtnNext>
+                <C.BtnNext disabled={btnnext} ><C.iconButton src={next} alt='Próximo'></C.iconButton>Próximo</C.BtnNext>
             </C.ContainerMenu>
             <Modal
                 isOpen={modalIsOpen}
