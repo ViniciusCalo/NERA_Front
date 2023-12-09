@@ -53,7 +53,7 @@ const TelaCadastro = () => {
         "senha": senha
       }
       try {
-        const uri = process.env.BASE_API_URL || "http://localhost:3001"; 
+        const uri = process.env.BASE_API_URL || "http://localhost:443"; 
         const response = await axios.post(`${uri}/usuario/cadastrar`, body)
         console.log(response.data.message)
         nav('/loginAluno')

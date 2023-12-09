@@ -10,7 +10,7 @@ import { useState } from "react";
 import axios from "axios";
 import Modal from 'react-modal';
 
-const uri = process.env.BASE_API_URL || "http://localhost:3001"; 
+const uri = process.env.BASE_API_URL || "http://localhost:443"; 
 
 const TelaQuestao = () => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
