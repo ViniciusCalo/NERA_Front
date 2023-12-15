@@ -11,7 +11,8 @@ import axios from "axios";
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
 
-const uri = process.env.BASE_API_URL || "http://localhost:3001"; 
+const uri = process.env.REACT_APP_API_URL || "http://localhost:3001"; 
+console.log(process.env)
 
 const TelaQuestao = () => {
     const nav = useNavigate()

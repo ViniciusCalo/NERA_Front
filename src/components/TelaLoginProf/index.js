@@ -30,7 +30,7 @@ const handleVerificarUsuario = async () => {
     "senha": senha
 }
 try {
-    const uri = process.env.BASE_API_URL || "http://localhost:3001";
+    const uri = process.env.REACT_APP_API_URL || "http://localhost:3001";
     const response = await axios.post(`${uri}/usuario/login`, body)
     setSesao(response.data.message);
     console.log(sessao)
