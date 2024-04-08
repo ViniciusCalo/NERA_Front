@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/417922e0-3ad5-4ed2-9e40-bfc299ab1f43/resourceGroups/Nera-App/providers/Microsoft.Web/sites/Nera-App",
+    "appService.deploySubpath": "."
+}

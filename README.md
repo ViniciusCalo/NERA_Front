@@ -1,99 +1,70 @@
+# Getting Started with Create React App
 
-# Projeto N.E.R.A.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-NERA (Números, Estratégias de ensino e Recursos de Aprendizagem) é um software de gamificação do ensino de matemática. O objetivo do projeto é oferecer uma plataforma interativa e divertida para ajudar estudantes a aprimorar suas habilidades matemáticas por meio de jogos, atividades personalizadas e acompanhamento do desempenho.
+## Available Scripts
 
+In the project directory, you can run:
 
-<p align="center">
-  <a href="/"><img src="./public/img/logoneraMinimizado.png" alt="NERA Logo"></a>
-</p>
+### `npm start`
 
-## Documentação de cores
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-| Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Cor Rosa      | ![#F20574](https://via.placeholder.com/10/F20574?text=+) #F20574 |
-| Cor Azul escuro       | ![#034C8C](https://via.placeholder.com/10/034C8C?text=+) #034C8C |
-| Cor Verde água       | ![#4ED9D9](https://via.placeholder.com/10/4ED9D9?text=+)  #4ED9D9 |
-| Cor Azul claro      | ![ #1AB6D9](https://via.placeholder.com/10/1AB6D9?text=+)  #1AB6D9 |
-| Cor Amarelo     | ![ #F2B705](https://via.placeholder.com/10/F2B705?text=+)  #F2B705 |
-| Cor Laranja     | ![ #F29F05](https://via.placeholder.com/10/F29F05?text=+)  #F29F05 |
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Funcionalidades
+### `npm test`
 
-- Telas de login e cadastro
-- Trilha de aprendizado
-- Perfil de desempenho do aluno
-- Telas de exercícios
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Documentação
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-[Documentação](https://link-da-documentação)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Stack utilizada
+### `npm run eject`
 
-**Front-end:** JavaScript, Handlebars, Bootstrap
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-**Back-end:** Node, Express
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Pré-requisitos
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Certifique-se de ter os seguintes softwares instalados em sua máquina:
+## Learn More
 
-- Node.js (versão X.X.X): [https://nodejs.org](https://nodejs.org)
-- npm (gerenciador de pacotes do Node.js, geralmente instalado com o Node.js)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Instalação
-Siga as etapas abaixo para instalar e configurar o projeto:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Clone o repositório:
+### Code Splitting
 
-    ```bash
-    git clone https://github.com/thaisperlho/app-nera.git
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-2. Navegue até o diretório do projeto:
+### Analyzing the Bundle Size
 
-    ```bash
-    cd app-nera
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-3. Instale as dependências do projeto:
+### Making a Progressive Web App
 
-    ```bash
-    npm install 
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Configuração
+### Advanced Configuration
 
-Antes de iniciar o projeto, é necessário realizar a configuração adequada. Siga as etapas abaixo:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Abra o arquivo db.js localizado na pasta models.
+### Deployment
 
-Insira as configurações necessárias do banco de dados.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### Banco de dados
+### `npm run build` fails to minify
 
-- [Postegresl](./script/PostgreSQL.sql) <img align="center" alt="Postegresl" height="50" width="50" src="./public/img/postgresql-original.svg">
-- [Mysql](./script/MySQL.sql) <img align="center" alt="Mysql" height="50" width="50" src="./public/img/mysql-original.svg">
-    
-
-## Uso
-Execute o projeto usando o seguinte comando:
-
-```bash
-  npx nodemon app-nera.js
-```
-
----
-## Autores
-
-- [@amandaSribeiro](https://github.com/amandaSribeiro)
-- [@thaisperlho](https://github.com/thaisperlho)
-- [@ViniciusCalo](https://github.com/ViniciusCalo)
-- [@Larissaribeiro03](https://github.com/Larissaribeiro03)
-- [@KedssonFigueredo](https://github.com/KedssonFigueredo)
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
